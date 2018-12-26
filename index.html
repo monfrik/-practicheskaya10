@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Я очень люблю паттерны(нет)</title>
+</head>
+<body>
+    <form action="">
+        <h2></h2>
+        <label>Username</label>
+        <input type="text" pattern="(?=.).{3,9}" required>
+        <label>Password</label>
+        <input type="password" autocomplete="off" pattern="(?=.*[А-Яа-яЁё])(?=.*[0-9]{2})(?=.*[!@#$%^&*]{1}).{5,10}" required>
+        <label>Password (Again)</label>
+        <input type="password" autocomplete="off" pattern="(?=.*[А-Яа-яЁё])(?=.*[0-9]{2})(?=.*[!@#$%^&*]{1}).{5,10}" required>
+        <label>Email</label>
+        <input type="email" pattern="[\d]{1,}" required>
+        <label>Website</label>
+        <input type="url" value="http://">
+        <label>Country</label>
+        <select name="" id="" required>
+            <option value="">Монголия</option>
+            <option value="">Украина</option>
+            <option value="">Тринидад и Тобаго</option>
+        </select>
+        <label>City</label>
+        <select name="" id="" required>
+            <option value="">Ростов-на-Дону</option>
+            <option value="">Москва</option>
+            <option value="">Санкт-Петербург</option>
+            <option value="">Чита</option>
+            <option value="">Батайск</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
